@@ -16,13 +16,22 @@ Over 30,000 homes were analyzed, and various features of those homes were provid
 
 ## Methods
 
-This project makes heavy use OLS regression, including attempts to transform the data in various ways, such as through log transformation and higher order regressions. This provides a way to ascertain what features are most relevant when predicting a prospective sale price in the near future.
+This project makes heavy use OLS regression, including attempts to transform the data in various ways, such as through log transformation and higher order regressions. This provides a way to ascertain what features are most relevant when predicting a prospective sale price in the near future. The adjusted R squared values explain how much of the variability in price (the dependent variable) can be explained by the independent variables (such as the number of bedrooms, or square footage of the house).
 
 ## Results
 
-Presumably, without better location data, the predictive power of the data that was analyzed is somwhat weak, with the best models barely approaching 50% explanatory power. However,  houses with "grade"s of 4 out of 7 or higher seem to have their prices increase by over 200,000 dollars with every subsequent increase in grade.
+Presumably, without better location data, the predictive power of the data that was analyzed is somwhat weak, with the best models approaching 50% explanatory power. However,  houses increase by about 300,000 dollars with every increase in the independent variable "grade", and grade itself in a naive model which takes only it as an independant variable explains about 35% of the variability in price.
 
-Installing a new bathroom also seems to raise a home's value by 70,000 dollars.
+![img](./FinalModel.png)
+
+Interestingly, the model's predictive capability increased slightly for newer homes.
+![img](./NewerHomes.png)
+
+For the 599 homes in a greenbelt area, the model's capability to explain prices jumped to over 60%.
+![img](./GreenbeltHomes.png)
+
+
+Installing a new bathroom also seems to raise a home's value by 49,000 dollars.
 
 ## Conclusions
 
@@ -35,5 +44,5 @@ This analysis leads to one strong and one soft recommendation for the client:
 
 Additional insight could be found if we had:
 
-- **Better understanding of the "grade" metric.** It is unclear even at info.kingcounty.gov what factors go into "grade", and it's downright baffling what is going on with the houses graded as a 1. Their average price seems far, far too high.
+- **Better understanding of the "grade" metric.** It is unclear even at info.kingcounty.gov what factors go into "grade".
 - **Better location data.** Latitude and longitude are not useful without a map, if even then. Specific neighborhood information would be very useful.
