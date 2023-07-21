@@ -22,6 +22,8 @@ This project makes heavy use OLS regression, including attempts to transform the
 
 Presumably, without better location data, the predictive power of the data that was analyzed is somwhat weak, with the best models approaching 50% explanatory power. However,  houses increase by about 300,000 dollars with every increase in the independent variable "grade", and grade itself in a naive model which takes only it as an independant variable explains about 35% of the variability in price.
 
+The amount of money explained by each feature is described by the value under "coef" below, and the percentage of the model's explanatory power is adjusted R squared (in decimal form)
+
 ![img](./FinalModel.png)
 
 Interestingly, the model's predictive capability increased slightly for newer homes.
