@@ -19,9 +19,11 @@ Over 30,000 homes were analyzed, and various features of those homes were provid
 This project makes heavy use OLS regression, including attempts to transform the data in various ways, such as through log transformation and higher order regressions. This provides a way to ascertain what features are most relevant when predicting a prospective sale price in the near future. The adjusted R squared values explain how much of the variability in price (the dependent variable) can be explained by the independent variables (such as the number of bedrooms, or square footage of the house).
 
 The assumptions for OLS were all tested (independence, normal distribution of residuals, homoschedasticity, linearity), with varying results. Every independant variable failed the linearity tests. Every one passed the test for homoschedasticity. Living room size was the only failure in the normality test. And, as seen below, only the bathrooms+living room pair failed the independence test (having a correlation coefficient with a greater absolute value than 0.7). It may be worth mentioning that several other pairs approached that suggested threshold.
-(Correlation coefficients)
+
+Correlation coefficients
 ![img](./CorrelationNum.png)
-(Same as above, but boolean)
+
+Same as above, but boolean
 ![img](./CorrelationBool.png)
 
 ## Results
@@ -32,11 +34,16 @@ The amount of money explained by each feature is described by the value under "c
 
 ![img](./FinalModel.png)
 
+
+
 Interestingly, the model's predictive capability increased slightly for newer homes.
 ![img](./NewerHomes.png)
 
+
+
 For the 599 homes in a greenbelt area, the model's capability to explain prices jumped to over 60%.
 ![img](./GreenbeltHomes.png)
+
 
 
 Installing a new bathroom also seems to raise a home's value by 49,000 dollars.
