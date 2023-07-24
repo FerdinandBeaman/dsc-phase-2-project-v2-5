@@ -18,8 +18,10 @@ Over 30,000 homes were analyzed, and various features of those homes were provid
 
 This project makes heavy use OLS regression, including attempts to transform the data in various ways, such as through log transformation and higher order regressions. This provides a way to ascertain what features are most relevant when predicting a prospective sale price in the near future. The adjusted R squared values explain how much of the variability in price (the dependent variable) can be explained by the independent variables (such as the number of bedrooms, or square footage of the house).
 
-The assumptions for OLS were all tested (independence, normal distribution of residuals, homoschedasticity, linearity), with varying results. Every independant variable failed the linearity tests. Every one passed the test for homoschedasticity. Living room size was the only failure in the normality test. And, as seen below, only the bathrooms+living room pair failed the independence test. It may be worth mentioning that several other pairs approached the suggested threshold of +/- 0.7.
+The assumptions for OLS were all tested (independence, normal distribution of residuals, homoschedasticity, linearity), with varying results. Every independant variable failed the linearity tests. Every one passed the test for homoschedasticity. Living room size was the only failure in the normality test. And, as seen below, only the bathrooms+living room pair failed the independence test (having a correlation coefficient with a greater absolute value than 0.7). It may be worth mentioning that several other pairs approached that suggested threshold.
+(Correlation coefficients)
 ![img](./CorrelationNum.png)
+(Same as above, but boolean)
 ![img](./CorrelationBool.png)
 
 ## Results
