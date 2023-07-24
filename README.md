@@ -28,9 +28,10 @@ Same as above, but boolean
 
 ## Results
 
-Presumably, without better location data, the predictive power of the data that was analyzed is somwhat weak. The best model that looked at all the data explaining 49.7% of the variability in price. However, houses seem to increase by about 300,000 dollars with every increase in the independent variable "grade", and grade itself in a naive model which takes only it as an independant variable explains about 35% of the variability in price.
+Presumably, without better location data, the predictive power of the data that was analyzed is somwhat weak. The best model that looked at all the data explained 49.7% of the variability in price. However, houses seem to increase by about 300,000 dollars with every increase in the independent variable "grade", and grade itself in a naive model which takes only it as an independant variable explains about 35% of the variability in price.
 
-Below are the technical printouts that came with varying OLS analyses. The amount of money explained by a change in one unit of a feature is described by the value under "coef", and the percentage of the model's explanatory power is adjusted R squared (in decimal form) in the upper right hand side.
+Below are the technical printouts for a few OLS analyses. The amount of money explained by a change in one unit of a feature is described by the value under "coef" on the lower left hand side, and the percentage of the whole model's explanatory power is called adjusted R squared (in decimal form) in the upper right hand side.
+
 First, the general model (which covers all homes, excluding outliers worth over about 2 million dollars)
 
 ![img](./FinalModel.png)
