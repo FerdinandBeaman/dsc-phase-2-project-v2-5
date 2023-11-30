@@ -21,10 +21,10 @@ This project makes heavy use OLS regression, including attempts to transform the
 The assumptions for OLS were all tested (independence, normal distribution of residuals, homoschedasticity, linearity), with varying results. Every independant variable failed the linearity tests. Every one passed the test for homoschedasticity. Living room size was the only failure in the normality test. And, as seen below, only the bathrooms+living room pair failed the independence test (having a correlation coefficient with a greater absolute value than 0.7). It may be worth mentioning that several other pairs approached that suggested threshold.
 
 Correlation coefficients
-![img](./CorrelationNum.png)
+![img](./Images/CorrelationNum.png)
 
 Same as above, but boolean
-![img](./CorrelationBool.png)
+![img](./Images/CorrelationBool.png)
 
 ## Results
 
@@ -34,24 +34,24 @@ Below are the technical printouts for a few OLS analyses. The amount of money ex
 
 First, the general model (which covers all homes, excluding outliers worth over about 2 million dollars)
 
-![img](./FinalModel.png)
+![img](./Images/FinalModel.png)
 
 
 
 Below is the printout for homes younger than the median age. Interestingly, the model's predictive capability increased slightly for newer homes.
-![img](./NewerHomes.png)
+![img](./Images/NewerHomes.png)
 
 
 
 For the 599 homes in a greenbelt area, the model's capability to explain prices jumped to over 60%.
-![img](./GreenbeltHomes.png)
+![img](./Images/GreenbeltHomes.png)
 
 
 
 Note that installing a new bathroom also seems to raise a home's value by 49,000 dollars.
 
 And Here are the rsquared values for each independent variable measured in isolation:
-![img](./BarRSquared.png)
+![img](./Images/BarRSquared.png)
 
 ## Conclusions
 
